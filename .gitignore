@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output artifacts
+output.jpg
+output.mp4
+test_*.jpg
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
