@@ -63,8 +63,9 @@ python face_detection.py webcam --detector dnn --eyes --smiles
 ### 3. Still Image Detection
 Detect on an image and save the annotated result:
 ```bash
-python face_detection.py image sample_face.jpg --detector dnn --eyes --smiles --output output.jpg
+python face_detection.py image path/to/your_image.jpg --detector dnn --eyes --smiles --output output.jpg
 ```
+Bring your own image for this example. Face photos and captured frames are not included in this public repository.
 
 ### 4. Video File Processing
 Analyze a pre-recorded video:
@@ -110,7 +111,7 @@ Options:
 
 ```text
 face-detection-app/
-├── captures/                                    # Timestamped snapshot exports (created automatically on 's' key)
+├── captures/                                    # Timestamped snapshot exports (created locally at runtime)
 ├── deploy.prototxt                              # Caffe SSD model architecture definition
 ├── res10_300x300_ssd_iter_140000_fp16.caffemodel# Caffe SSD deep learning weights (OpenCV 4.x)
 ├── opencv_face_detector.pbtxt                   # TensorFlow SSD model text configuration (OpenCV 5+)
@@ -120,7 +121,7 @@ face-detection-app/
 ├── haarcascade_smile.xml                        # Haar smile detection cascade
 ├── face_detection.py                            # Core application: dual detectors, ROI pipeline, HUD & CLI
 ├── test_face_detection.py                       # Automated test suite (11 test cases across models & features)
-├── sample_face.jpg                              # High-resolution benchmark test image
+├── your_image.jpg                               # Supply your own image for still-image mode
 ├── requirements.txt                             # Python dependencies (opencv-python, numpy)
 ├── run.bat                                      # Interactive launcher menu for Windows
 ├── run.sh                                       # Interactive launcher script for Linux/macOS

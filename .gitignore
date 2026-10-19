@@ -7,6 +7,9 @@ __pycache__/
 output.jpg
 output.mp4
 test_*.jpg
+captures/
+sample_face.jpg
+detection_result.jpg
 
 # Editor directories
 .vscode/
